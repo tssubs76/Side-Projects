@@ -1,0 +1,49 @@
+
+/**************************************************************************************
+* Copyright 2024 Yeoh Tai Sim
+* 
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+* 
+*     https://www.apache.org/licenses/LICENSE-2.0
+* 
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+* 
+***************************************************************************************/
+
+----------------------------------------------
+    SAS Test Scenario File Generator App Release Notes
+----------------------------------------------
+ Version      Date       Description
+ ---------------------------------------------
+   0.7    20 Mar 2024    - Added support for the option called "REPORT DATA" whereby allowing the user to deliberately 
+                           omit measurement data for specific SAS operations.
+   0.6    06 Mar 2024    - Corrected the logic whereby AP4 Down to Neutral operation block results in exported script having null as the speed parameter.
+   0.5    05 Mar 2024    - Updated Test Scenario file generator with official AP4 operations name as defined by vendor.
+                         - Corrected logic error in AP4 Test Scenario File generation whereby
+                            + Null parameter given to AP4's Down to neutral operations
+                            + Wrong Operation type defined for AP4's Right to Neutral operations
+                         - Corrected Test Scenario File generation code whereby extra empty line added between sections
+                         - Added Known issues ID in the Known Issues file.
+                         - Revise any references to "script" string to "Test Scenario File" for consistency with requirements.
+   0.4    25 Feb 2024    - Added code to export the SAS Workspace to SAS Test Scenario File 
+                           (i.e. Script) based of vendor specifications.
+                         - Resolved issues of pseudo code generated for display shows nested
+                           repeat loops (i.e. Known Issue #1)
+                         - Added support for code obfuscation to prevent reverse engineering.
+                         - Added support to automate copy of files for distribution to accompany 
+                           releases (e.g. Release Notes, Known Issues, Licenses)
+                         - Revise property/field namings to PARAM1 and PARAM 2 for SAS blocks  
+                           to allow optimization in other parts of the code/design.
+                         - Added additional support for alerts/notification of save cancellation.
+                         - Added additional support for alerts/notifications of export cancellation
+                           and also for successful export.
+                         - Corrected alert/notification to inform user that import of script to
+                           correct location hence avoiding the display of file open dialogs.
+                         - Added support for proper decomposing of group of operations to their
+                           individual operations for the SAS Test Scenario File.
