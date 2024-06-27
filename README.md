@@ -8,3 +8,8 @@ BlocklyBasedScriptGenerator - A Google Blockly based app that allows testers to 
                               the script generation/maintenance tasks of the tester.
                               The output of the app are script files that can be loaded into the automated test system.
                               Reference: https://developers.google.com/blockly
+
+SGTBill - An exploratory/learning project into the world of data science/analytics which includes but not limited to 
+          learning of concepts and tools involved (e.g. Python, Jupyter Notebook, Jupyter Lab, Python Virtual Environments)
+
+* Last Updated: 27 June 2024 *
