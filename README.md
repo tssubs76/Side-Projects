@@ -12,4 +12,8 @@ BlocklyBasedScriptGenerator - A Google Blockly based app that allows testers to 
 SGTBill - An exploratory/learning project into the world of data science/analytics which includes but not limited to 
           learning of concepts and tools involved (e.g. Python, Jupyter Notebook, Jupyter Lab, Python Virtual Environments)
 
-* Last Updated: 27 June 2024 *
+Stocks - Data analysis projects for stocks based investments. Purpose of the project is to provide a way to visualize the
+         investments activity to allow quick grasps of the current status of investments. Raw data is stored in spreadsheet format
+         as it allows quick/basic data entry by the user. 
+
+* Last Updated: 09 Sep 2024 *
